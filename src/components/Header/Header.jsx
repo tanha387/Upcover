@@ -11,21 +11,21 @@ export default function Header() {
     };
 
     return (
-        <header className='fixed top-0 left-0 right-0 bg-white shadow-md z-50 p-4'>
+        <header className='fixed top-0 left-0 right-0 bg-white  z-50 p-4 '>
             <div className='container mx-auto flex justify-between items-center p-4'>
                 <div>
                     <img src={icon} alt="icon" className="h-10 w-auto" />
                 </div>
                 <nav className='hidden lg:flex'>
-                    <ul className='flex space-x-6'>
-                        <ScrollLink to="home" smooth={true} duration={500} className='hover:text-teal-500'>HOME</ScrollLink>
-                        <ScrollLink to="about" smooth={true} duration={500} className='hover:text-teal-500'>ABOUT</ScrollLink>
-                        <ScrollLink to="services" smooth={true} duration={500} className='hover:text-teal-500'>SERVICES</ScrollLink>
-                        <ScrollLink to="testimonial" smooth={true} duration={500} className='hover:text-teal-500'>TESTIMONIAL</ScrollLink>
-                        <ScrollLink to="pricing" smooth={true} duration={500} className='hover:text-teal-500'>PRICING</ScrollLink>
-                        <ScrollLink to="blogs" smooth={true} duration={500} className='hover:text-teal-500'>BLOGGING</ScrollLink>
-                        <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-teal-500'>CONTACT US</ScrollLink>
-                        <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600'>LOG IN</Link>
+                    <ul className='flex space-x-6 text-sm mt-2'>
+                        <ScrollLink to="home" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>HOME</ScrollLink>
+                        <ScrollLink to="about" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer' >ABOUT</ScrollLink>
+                        <ScrollLink to="services" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>SERVICES</ScrollLink>
+                        <ScrollLink to="testimonial" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>TESTIMONIAL</ScrollLink>
+                        <ScrollLink to="pricing" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>PRICING</ScrollLink>
+                        <ScrollLink to="blogs" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>BLOGGING</ScrollLink>
+                        <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>CONTACT US</ScrollLink>
+                        <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600  hover:cursor-pointer'>LOG IN</Link>
                     </ul>
                 </nav>
                 <button onClick={toggleDrawer} className='lg:hidden flex items-center justify-center p-2 text-gray-600 hover:text-teal-500'>
@@ -47,14 +47,14 @@ export default function Header() {
                             </svg>
                         </button>
                         <ul className='flex flex-col items-start space-y-4'>
-                            <ScrollLink to="home" smooth={true} duration={500} className='hover:text-teal-500'>HOME</ScrollLink>
-                            <ScrollLink to="about" smooth={true} duration={500} className='hover:text-teal-500'>ABOUT</ScrollLink>
-                            <ScrollLink to="services" smooth={true} duration={500} className='hover:text-teal-500'>SERVICES</ScrollLink>
-                            <ScrollLink to="testimonial" smooth={true} duration={500} className='hover:text-teal-500'>TESTIMONIAL</ScrollLink>
-                            <ScrollLink to="pricing" smooth={true} duration={500} className='hover:text-teal-500'>PRICING</ScrollLink>
-                            <ScrollLink to="blogs" smooth={true} duration={500} className='hover:text-teal-500'>BLOGGING</ScrollLink>
-                            <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-teal-500'>CONTACT US</ScrollLink>
-                            <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600 text-lg'>LOG IN</Link>
+                            <ScrollLink to="home" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>HOME</ScrollLink>
+                            <ScrollLink to="about" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>ABOUT</ScrollLink>
+                            <ScrollLink to="services" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>SERVICES</ScrollLink>
+                            <ScrollLink to="testimonial" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>TESTIMONIAL</ScrollLink>
+                            <ScrollLink to="pricing" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>PRICING</ScrollLink>
+                            <ScrollLink to="blogs" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>BLOGGING</ScrollLink>
+                            <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-teal-500  hover:cursor-pointer'>CONTACT US</ScrollLink>
+                            <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600 text-lg  hover:cursor-pointer'>LOG IN</Link>
                         </ul>
                     </div>
                 </div>

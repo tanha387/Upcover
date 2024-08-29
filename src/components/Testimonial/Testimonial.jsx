@@ -9,6 +9,8 @@ import 'swiper/css/autoplay';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft, faStar } from '@fortawesome/free-solid-svg-icons';
 import about from '../../assets/images/project.png';
+import james from '../../assets/images/james.png';
+import sony from '../../assets/images/sony.png';
 
 const slideData = [
     {
@@ -20,21 +22,21 @@ const slideData = [
     },
     {
         quote: "There is now an abundance of readable dummy texts. These are usually used when a text is required",
-        name: "Jemina CLone",
+        name: "James CLone",
         title: "Manager",
-        image: about,
+        image: sony,
         rating: 3,
     },
     {
         quote: "There is now an abundance of readable dummy texts. These are usually used when a text is required",
         name: "Jemina CLone",
-        title: "Manager",
-        image: about,
+        title: "Director",
+        image: james,
         rating: 3,
     },
     {
         quote: "There is now an abundance of readable dummy texts. These are usually used when a text is required",
-        name: "Jemina CLone",
+        name: "Sony Shah",
         title: "Manager",
         image: about,
         rating: 3,
@@ -96,7 +98,7 @@ const Testimonial = () => {
                             </div>
                         </div>
 
-                        <img src={about} alt="Hero Banner" className="size-14 mx-auto rounded-full" />
+                        <img src={slide.image} alt="Hero Banner" className="size-14 mx-auto rounded-full" />
                         <div className='text-center'>
                             <h6 className='text-center'>{slide.name}</h6>
                             <span className='text-center'>{slide.title}</span>

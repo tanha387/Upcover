@@ -6,14 +6,11 @@ export default function About() {
         <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2   p-28 items-center' id="about">
             < div >
                 <img src={about} alt="Hero Banner" className="lg:w-full me-3 xl:w-3/4 mt-6  rounded-full object-cover " />
-                {/* <div className='w-1/2 bg-re rounded-sm -mt-56 h-auto'>
-                    15 years
 
-                </div> */}
             </div >
-            <div className='w-full   xl:w-3/4'>
+            <div className='w-full   xl:w-3/4 '>
                 <h4 className='text-sm text-teal-500 font-semibold leading-normal mb-3'>WHO ARE WE?</h4>
-                <h3 className='font-semibold text-2xl w-3/4'>We're a global stakeholder
+                <h3 className='font-semibold xl:text-3xl w-3/4  sm:text-2xl sm:w-full'>We're a global stakeholder
                     relations and partnership
                     building consultancy.</h3>
 
