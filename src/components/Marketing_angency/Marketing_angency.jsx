@@ -4,7 +4,7 @@ import seo from '../../assets/images/seo.png';
 import results from '../../assets/images/results.png';
 function Marketing_angency() {
 
-    const [activeTab, setActiveTab] = useState('');
+    const [activeTab, setActiveTab] = useState('profile');
 
 
     const handleTabClick = (tabName) => {
@@ -13,8 +13,8 @@ function Marketing_angency() {
 
     return (
         <div>
-            <div className="container  xl:flex px-32 mx-auto sm:block p-0">
-                <ul className=" text-sm font-medium text-gray-400 dark:text-gray-400 md:me-4 mb-4 md:mb-0 border xl:h-80 md:h-auto ">
+            <div className="container  xl:flex px-32 mx-auto sm:block p-0 mb-9">
+                <ul className=" text-sm font-medium text-gray-400 dark:text-gray-400 md:me-4 mb-4 md:mb-0 border xl:h-auto md:h-auto ">
                     <li>
                         <button
                             onClick={() => handleTabClick('profile')}

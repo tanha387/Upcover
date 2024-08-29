@@ -6,7 +6,7 @@ import heroBanner from '../../assets/images/hero_banner.png';
 function HeroBanner() {
 
     return (
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2  p-28 items-center">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2  p-28 items-center" id='home'>
             <div className="flex flex-col justify-center ">
                 <h1 className="font-semibold lg:leading-normal leading-normal tracking-wide text-3xl lg:text-5xl mb-5">Get Creative & Modern With Upcover</h1>
                 <p className="text-slate-400 text-lg max-w-xl">
