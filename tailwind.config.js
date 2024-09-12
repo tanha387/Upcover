@@ -6,7 +6,11 @@ export default {
     "node_modules/preline/dist/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: { max: "400px" },
+      },
+    },
   },
   plugins: [require("preline/plugin")],
 };

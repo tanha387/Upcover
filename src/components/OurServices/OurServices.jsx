@@ -2,11 +2,11 @@ import React from 'react'
 
 function OurServices() {
     return (
-        <div className='container p-32 mx-auto' id="services" >
-            <h1 className='text-center font-semibold text-2xl'>Our Services</h1>
+        <div className='container mx-auto xl:px-32 sm:p-5 mt-8' id="services" >
+            <h1 className='text-center font-semibold text-2xl w-full'>Our Services</h1>
 
             <p className='lg:w-full text-slate-400 mx-auto xl:w-1/2 mt-4 text-center'>This is just a simple text made for this unique and awesome template,<br /> you can replace it with any text.</p>
-            <div className='grid md:grid-cols-2 gap-3 m-4 sm:grid-cols-1 xl:grid-cols-4 mt-11 '>
+            <div className='grid md:grid-cols-2 gap-3 m-4 sm:grid-cols-1 mx-auto xl:grid-cols-4 mt-11 '>
                 <div className=' md:w-full  md:h-auto  sm:h-auto sm:w-full md:p-5 xl:w-72 xl:h-80 p-7 rounded-md shadow-md '>
                     <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg " className='color-teal-400'>
                         <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>

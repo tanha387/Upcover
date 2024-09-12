@@ -13,8 +13,8 @@ function Marketing_angency() {
 
     return (
         <div>
-            <div className="container  xl:flex px-32 mx-auto sm:block p-0 mb-9">
-                <ul className=" text-sm font-medium text-gray-400 dark:text-gray-400 md:me-4 mb-4 md:mb-0 border xl:h-auto md:h-auto ">
+            <div className="container mx-auto p-8 xl:p-32 sm:p-4 w-full mb-9 flex flex-col xl:flex-row">
+                <ul className=" text-sm font-medium text-gray-400 dark:text-gray-400 md:me-4 mb-4 md:mb-0 border xl:h-auto md:h-auto  ">
                     <li>
                         <button
                             onClick={() => handleTabClick('profile')}
@@ -60,7 +60,7 @@ function Marketing_angency() {
                 <div className="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-white  rounded-lg w-auto border">
                     {activeTab === 'profile' && (
                         <div >
-                            <img src={about} alt="Hero Banner" className="lg:w-full  xl:w-full mt-6 h-96 " />
+                            <img src={about} alt="Hero Banner" className="" />
                             <h5 className='text-black my-6'>SEO Aduit</h5>
 
                             <p className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, impedit vitae. Nobis, similique omnis cumque sapiente laboriosam animi quod cupiditate?</p>
@@ -74,7 +74,7 @@ function Marketing_angency() {
                     {activeTab === 'dashboard' && (
                         <>
 
-                            <img src={seo} alt="Hero Banner" className="lg:w-full  xl:w-full mt-6 h-96 " />
+                            <img src={seo} alt="Hero Banner" className="" />
                             <h5 className='text-black my-6'>Project Execution</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, impedit vitae. Nobis, similique omnis cumque sapiente laboriosam animi quod cupiditate?</p>
                             <div className='mt-8'>
@@ -85,7 +85,7 @@ function Marketing_angency() {
 
                     {activeTab === 'settings' && (
                         <>
-                            <img src={results} alt="Hero Banner" className="lg:w-full  xl:w-full mt-6 h-96 " />
+                            <img src={results} alt="Hero Banner" className=" " />
                             <h5 className='text-black my-6'>Results & Reporting</h5>
 
                             <p className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, impedit vitae. Nobis, similique omnis cumque sapiente laboriosam animi quod cupiditate?</p>
