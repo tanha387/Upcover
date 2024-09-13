@@ -2,7 +2,7 @@ import React from 'react'
 
 function OurServices() {
     return (
-        <div className='container mx-auto xl:px-32 sm:p-5 mt-8' id="services" >
+        <div className='container mx-auto  xl:px-36 py-28 sm:p-5 mt-8' id="services" >
             <h1 className='text-center font-semibold text-2xl w-full'>Our Services</h1>
 
             <p className='lg:w-full text-slate-400 mx-auto xl:w-1/2 mt-4 text-center'>This is just a simple text made for this unique and awesome template,<br /> you can replace it with any text.</p>

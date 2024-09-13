@@ -10,7 +10,7 @@ function Tutorial() {
     };
 
     return (
-        <div className="relative">
+        <div className="relative mt-64">
 
             <img
                 src={about}

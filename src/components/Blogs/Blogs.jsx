@@ -7,7 +7,7 @@ import { faCalendarDays, faBusinessTime } from '@fortawesome/free-solid-svg-icon
 
 function Blogs() {
     return (
-        <div className='container px-4 md:px-8 lg:p-32 mx-auto mt-80' id='blogs'>
+        <div className='container px-4 md:px-8 lg:p-32 mx-auto mt-60' id='blogs'>
             <h3 className='text-center text-2xl mt-8'>Blog or News</h3>
             <p className='text-center text-gray-500 mt-5'>
                 This is just a simple text made for this unique and awesome template, you can

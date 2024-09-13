@@ -6,10 +6,13 @@ import { faTwitter, faInstagram, faPinterest, faYoutube, faFacebook } from '@for
 
 function Footer() {
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 p-16 bg-black'>
+        <div className="grid grid-cols-1 gap-4 bg-black xs:px-0 lg:grid-cols-3 xl:px-52 xl:py-16">
+
+
+
 
             <div className='flex items-center justify-center'>
-                <img src={icon} alt="Upcover Logo" className="h-10 w-32" />
+                <img src={icon} alt="Upcover Logo" className="" />
             </div>
 
 
@@ -20,7 +23,7 @@ function Footer() {
             </div>
 
 
-            <div className='flex items-center justify-center lg:justify-end space-x-4'>
+            <div className='flex items-center justify-center lg:justify-center space-x-4'>
                 <FontAwesomeIcon icon={faFacebook} size="2x" color="#4267B2" />
                 <FontAwesomeIcon icon={faTwitter} size="2x" color="#1DA1F2" />
                 <FontAwesomeIcon icon={faInstagram} size="2x" color="#E4405F" />
@@ -28,6 +31,7 @@ function Footer() {
                 <FontAwesomeIcon icon={faYoutube} size="2x" color="#FF0000" />
             </div>
         </div>
+
     );
 }
 

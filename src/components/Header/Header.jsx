@@ -5,28 +5,40 @@ import { Link as ScrollLink } from 'react-scroll';
 
 export default function Header() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState('home'); // State to keep track of the active link
 
     const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen);
     };
 
-    return (
-        <header className='container  fixed top-0 left-0 right-0 bg-white  z-50  '>
-            <div className="mx-auto flex flex-wrap items-center justify-between xl:px-40 xl:py-8 sm:px-0">
+    const handleSetActive = (link) => {
+        setActiveLink(link);
+    };
 
+    return (
+        <header className='container fixed top-0 left-0 right-0 bg-white z-50'>
+            <div className="mx-auto flex flex-wrap items-center justify-between xl:px-40 xl:py-8 sm:px-0">
                 <div>
                     <img src={icon} alt="icon" className="h-auto" />
                 </div>
                 <nav className='hidden lg:flex'>
                     <ul className='flex space-x-6 text-sm mt-2'>
-                        <ScrollLink to="home" smooth={true} duration={500} className='hover:text-teal-500 mt-3  hover:cursor-pointer'>HOME</ScrollLink>
-                        <ScrollLink to="about" smooth={true} duration={500} className='hover:text-teal-500 mt-3  hover:cursor-pointer' >ABOUT</ScrollLink>
-                        <ScrollLink to="services" smooth={true} duration={500} className='hover:text-teal-500 mt-3  hover:cursor-pointer'>SERVICES</ScrollLink>
-                        <ScrollLink to="testimonial" smooth={true} duration={500} className='hover:text-teal-500 mt-3   hover:cursor-pointer'>TESTIMONIAL</ScrollLink>
-                        <ScrollLink to="pricing" smooth={true} duration={500} className='hover:text-teal-500 mt-3  hover:cursor-pointer'>PRICING</ScrollLink>
-                        <ScrollLink to="blogs" smooth={true} duration={500} className='hover:text-teal-500 mt-3  hover:cursor-pointer'>BLOGGING</ScrollLink>
-                        <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-teal-500 mt-3  hover:cursor-pointer'>CONTACT US</ScrollLink>
-                        <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600  hover:cursor-pointer'>LOG IN</Link>
+                        {['home', 'about', 'services', 'testimonial', 'pricing', 'blogs', 'contact'].map((item) => (
+                            <ScrollLink
+                                key={item}
+                                to={item}
+                                smooth={true}
+                                duration={500}
+                                spy={true} // Enables spying to detect active link
+                                className={`mt-3 hover:cursor-pointer hover:text-teal-500 ${activeLink === item ? 'text-teal-500' : ''}`}
+                                onSetActive={() => handleSetActive(item)}
+                            >
+                                {item.toUpperCase()}
+                            </ScrollLink>
+                        ))}
+                        <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600 hover:cursor-pointer'>
+                            LOG IN
+                        </Link>
                     </ul>
                 </nav>
                 <button onClick={toggleDrawer} className='lg:hidden flex items-center justify-center p-2 text-gray-600 hover:text-teal-500'>
@@ -38,7 +50,6 @@ export default function Header() {
             </div>
 
             {/* Drawer Menu */}
-            {/* Drawer Menu */}
             {isDrawerOpen && (
                 <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-end lg:hidden z-50">
                     <div className="w-1/2 bg-white p-4 h-full relative">
@@ -49,19 +60,26 @@ export default function Header() {
                             </svg>
                         </button>
                         <ul className='flex flex-col items-start space-y-4'>
-                            <ScrollLink to="home" smooth={true} duration={500} className='hover:text-teal-500 hover:cursor-pointer'>HOME</ScrollLink>
-                            <ScrollLink to="about" smooth={true} duration={500} className='hover:text-teal-500 hover:cursor-pointer'>ABOUT</ScrollLink>
-                            <ScrollLink to="services" smooth={true} duration={500} className='hover:text-teal-500 hover:cursor-pointer'>SERVICES</ScrollLink>
-                            <ScrollLink to="testimonial" smooth={true} duration={500} className='hover:text-teal-500 hover:cursor-pointer'>TESTIMONIAL</ScrollLink>
-                            <ScrollLink to="pricing" smooth={true} duration={500} className='hover:text-teal-500 hover:cursor-pointer'>PRICING</ScrollLink>
-                            <ScrollLink to="blogs" smooth={true} duration={500} className='hover:text-teal-500 hover:cursor-pointer'>BLOGGING</ScrollLink>
-                            <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-teal-500 hover:cursor-pointer'>CONTACT US</ScrollLink>
-                            <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600 text-lg hover:cursor-pointer'>LOG IN</Link>
+                            {['home', 'about', 'services', 'testimonial', 'pricing', 'blogs', 'contact'].map((item) => (
+                                <ScrollLink
+                                    key={item}
+                                    to={item}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true} // Enables spying to detect active link
+                                    className={`hover:text-teal-500 hover:cursor-pointer ${activeLink === item ? 'text-teal-500' : ''}`}
+                                    onSetActive={() => handleSetActive(item)}
+                                >
+                                    {item.toUpperCase()}
+                                </ScrollLink>
+                            ))}
+                            <Link to="/login" className='px-6 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600 text-lg hover:cursor-pointer'>
+                                LOG IN
+                            </Link>
                         </ul>
                     </div>
                 </div>
             )}
-
         </header>
     );
 }

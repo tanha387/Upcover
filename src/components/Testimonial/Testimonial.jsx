@@ -47,7 +47,7 @@ const slideData = [
 
 const Testimonial = () => {
     return (
-        <div className='container px-4 sm:px-8 md:px-16 lg:px-32 xl:px-32 mx-auto' id="testimonial">
+        <div className='container px-4 sm:px-8 md:px-16 lg:px-32 xl:px-36 mx-auto' id="testimonial">
             <h3 className='text-center text-2xl mt-8'>What Our Users Say</h3>
             <p className='text-center text-gray-500 mt-5'>
                 This is just a simple text made for this unique and awesome template,

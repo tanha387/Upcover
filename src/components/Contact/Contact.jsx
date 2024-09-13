@@ -3,7 +3,7 @@ import app from '../../assets/images/contact.png';
 
 function Contact() {
     return (
-        <div className='container px-4 md:px-8 lg:px-32 py-16 mx-auto mt-24 mb-10' id='contact'>
+        <div className='container px-4 md:px-8 lg:px-32 py-28 mx-auto mt-24 mb-10' id='contact'>
             <h3 className='text-center text-2xl mt-8'>Get in touch </h3>
             <p className='text-center text-gray-500 mt-5'>
                 This is just a simple text made for this unique and awesome template

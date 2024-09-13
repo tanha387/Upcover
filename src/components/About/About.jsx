@@ -3,7 +3,7 @@ import about from '../../assets/images/about.png';
 
 export default function About() {
     return (
-        <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10  xl:p-36 items-center' id="about">
+        <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10  xl:px-36 py-28 items-center' id="about">
             < div >
                 <img src={about} alt="Hero Banner" className="lg:w-3/4 me-3 xl:w-auto mt-6  rounded-full object-cover " />
 

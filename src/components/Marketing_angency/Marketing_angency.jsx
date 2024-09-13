@@ -13,44 +13,49 @@ function Marketing_angency() {
 
     return (
         <div>
-            <div className="container mx-auto p-8 xl:p-32 sm:p-4 w-full mb-9 flex flex-col xl:flex-row">
-                <ul className=" text-sm font-medium text-gray-400 dark:text-gray-400 md:me-4 mb-4 md:mb-0 border xl:h-auto md:h-auto  ">
+            <div className="container mx-auto p-8 xl:p-36 sm:p-4 w-full mb-9 flex flex-col xl:flex-row ">
+                <ul className=" text-sm font-medium text-gray-400 dark:text-gray-400 md:me-4 mb-4 md:mb-0 border xl:h-auto md:h-auto rounded-lg p-6 shadow-md ">
                     <li>
                         <button
                             onClick={() => handleTabClick('profile')}
-                            className={`text-left px-4 py-8 text-black rounded-lg w-full hover:bg-gray-100 ${activeTab === 'profile' ? 'bg-teal-400 text-white' : 'bg-white'
+                            className={`text-left px-4 py-8 rounded-lg w-full hover:bg-gray-300 ${activeTab === 'profile'
+                                ? 'bg-teal-400 text-white'
+                                : 'bg-white text-gray-600'
                                 }`}
                             aria-current="page"
                         >
-                            <span className='text-gray-500'>Step 1</span>
-                            <span className='text-lg mt-2 block text-gray-500'>SEO Audit</span>
-                            <span className='mt-2 text-gray-500'>We offer flexible and comprehensive online marketing plans</span>
+                            <span className={activeTab === 'profile' ? 'text-white' : 'text-gray-500'}>Step 1</span>
+                            <span className={`text-lg mt-2 block ${activeTab === 'profile' ? 'text-white' : 'text-gray-500'}`}>SEO Audit</span>
+                            <span className={`mt-2 ${activeTab === 'profile' ? 'text-white' : 'text-gray-500'}`}>We offer flexible and comprehensive online marketing plans</span>
                         </button>
 
                     </li >
                     <li>
                         <button
                             onClick={() => handleTabClick('dashboard')}
-                            className={`text-left px-4 py-8 text-black rounded-lg w-full hover:bg-gray-100  ${activeTab === 'dashboard' ? 'bg-teal-400 text-white' : 'bg-white'
+                            className={`text-left px-4 py-8 rounded-lg w-full hover:bg-gray-300 ${activeTab === 'dashboard'
+                                ? 'bg-teal-400 text-white'
+                                : 'bg-white text-gray-500'
                                 }`}
                             aria-current="page"
                         >
-                            <span className='text-gray-500'>Step 2</span>
-                            <span className='text-lg mt-2 block text-gray-500'>Resulting and Reporting</span>
-                            <span className='mt-2 text-gray-500'>We offer flexible and comprehensive online marketing plans</span>
+                            <span className={activeTab === 'dashboard' ? 'text-white' : 'text-gray-500'}>Step 2</span>
+                            <span className={`text-lg mt-2 block ${activeTab === 'dashboard' ? 'text-white' : 'text-gray-500'}`}>Resulting and Reporting</span>
+                            <span className={`mt-2 ${activeTab === 'dashboard' ? 'text-white' : 'text-gray-500'}`}>We offer flexible and comprehensive online marketing plans</span>
                         </button>
 
                     </li>
                     <li>
                         <button
-
                             onClick={() => handleTabClick('settings')}
-                            className={`text-left text-black px-4 py-8 rounded-lg  hover:bg-gray-100 w-full dark:hover:text-white  ${activeTab === 'settings' ? 'bg-teal-400 text-white' : 'bg-white'}`}
+                            className={`text-left px-4 py-8 rounded-lg w-full hover:bg-gray-300 ${activeTab === 'settings'
+                                ? 'bg-teal-400 text-white'
+                                : 'bg-white text-gray-500'
+                                }`}
                         >
-                            <span className=' text-gray-500'>Step 3</span>
-
-                            <span className='text-lg mt-2 block  text-gray-500'>Project Excution</span>
-                            <span className=' mt-2  text-gray-500'>We offer flexible and comprehensive online marketing plans</span>
+                            <span className={activeTab === 'settings' ? 'text-white' : 'text-gray-500'}>Step 3</span>
+                            <span className={`text-lg mt-2 block ${activeTab === 'settings' ? 'text-white' : 'text-gray-500'}`}>Project Execution</span>
+                            <span className={`mt-2 ${activeTab === 'settings' ? 'text-white' : 'text-gray-500'}`}>We offer flexible and comprehensive online marketing plans</span>
                         </button>
                     </li>
 
