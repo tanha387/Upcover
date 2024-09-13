@@ -6,7 +6,7 @@ function OurServices() {
             <h1 className='text-center font-semibold text-2xl w-full'>Our Services</h1>
 
             <p className='lg:w-full text-slate-400 mx-auto xl:w-1/2 mt-4 text-center'>This is just a simple text made for this unique and awesome template,<br /> you can replace it with any text.</p>
-            <div className='grid md:grid-cols-2 gap-3 m-4 sm:grid-cols-1 mx-auto xl:grid-cols-4 mt-11 '>
+            <div className='grid md:grid-cols-2 md:gap-3 m-4 sm:grid-cols-1 mx-auto xl:grid-cols-4 xl:gap-20 mt-11 '>
                 <div className=' md:w-full  md:h-auto  sm:h-auto sm:w-full md:p-5 xl:w-72 xl:h-80 p-7 rounded-md shadow-md '>
                     <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg " className='color-teal-400'>
                         <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
@@ -23,7 +23,7 @@ function OurServices() {
                             viewBox="0 0 24 24"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="size-18 text-teal-400 opacity-10 hover:opacity-30 transition-opacity duration-500"
+                            className="size-18 text-teal-400 opacity-10 hover:opacity-30 transition-opacity duration-500 "
                             height="130px"
                             width="200px"
                             xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ function OurServices() {
                 </div>
 
                 <div className=' md:w-full  md:h-auto  sm:h-auto sm:w-full md:p-5 xl:w-72 xl:h-80 p-7 rounded-md shadow-md '>
-                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
 
                     <a class="title text-lg font-semibold hover:text-teal-500 my-5" href="/">Drive More Sales</a>
                     <p className='my-9 text-slate-400'>If the distribution of letters and words is random, the reader will not be distracted from making..</p>
@@ -49,7 +49,7 @@ function OurServices() {
                             viewBox="0 0 24 24"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="size-18 text-teal-400 opacity-10 hover:opacity-30 transition-opacity duration-500"
+                            className="size-18 text-teal-400 opacity-10 hover:opacity-30 transition-opacity duration-500 "
                             height="160px"
                             width="200px"
                             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ function OurServices() {
 
 
                 <div className=' md:w-full  md:h-auto  sm:h-auto sm:w-full md:p-5 xl:w-72 xl:h-80 p-7 rounded-md shadow-md '>
-                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>
+                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>
 
                     <a class="title text-lg font-semibold hover:text-teal-500 my-5" href="/">Network Security</a>
                     <p className='my-9 text-slate-400'>If the distribution of letters and words is random, the reader will not be distracted from making.</p>
@@ -139,7 +139,7 @@ function OurServices() {
 
                 </div>
                 <div className=' md:w-full  md:h-auto  sm:h-auto sm:w-full md:p-5 xl:w-72 xl:h-80 p-7 rounded-md shadow-md '>
-                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
 
                     <a class="title text-lg font-semibold hover:text-teal-500 my-5" href="/">Web Design</a>
                     <p className='my-9 text-slate-400'>If the distribution of letters and words is random, the reader will not be distracted from making.</p>
@@ -164,7 +164,7 @@ function OurServices() {
                     </div>
                 </div>
                 <div className=' md:w-full  md:h-auto  sm:h-auto sm:w-full md:p-5 xl:w-72 xl:h-80 p-7 rounded-md shadow-md '>
-                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div>
+                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div>
 
                     <a class="title text-lg font-semibold hover:text-teal-500 my-5" href="/">Social Media</a>
                     <p className='my-9 text-slate-400'>If the distribution of letters and words is random, the reader will not be distracted from making.</p>
@@ -187,7 +187,7 @@ function OurServices() {
                     </div>
                 </div>
                 <div className=' md:w-full  md:h-auto  sm:h-auto sm:w-full md:p-5 xl:w-72 xl:h-80 p-7 rounded-md shadow-md '>
-                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+                    <div className='text-teal-500 rounded-full mb-10 w-12 h-12 shadow-lg flex items-center justify-center hover:bg-teal-100'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-6 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
 
                     <a class="title text-lg font-semibold hover:text-teal-500 my-5" href="/">Design & Branding</a>
                     <p className='my-9 text-slate-400'>If the distribution of letters and words is random, the reader will not be distracted from making.</p>
